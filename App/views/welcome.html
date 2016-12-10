@@ -1,0 +1,37 @@
+<style>
+	.btn {
+		background: none;
+		border: 2px solid white;
+		color: white;
+	}
+	.btn:hover, .btn:focus, .btn:active {
+
+		border: 2px solid white;
+	}
+
+</style>
+<header class="intro-header" style="background-image: url('https://anonimag.es/i/c6e6d1f97fad8207c1628b87a1918d69.jpg'); background-attachment: fixed;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>IMDb 5000+</h1>
+                        <hr class="small">
+                        <span class="subheading">Your Favorite movie DataBase</span>
+			<br>
+			<a class="btn btn-default" href="#movies">Search Movies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<section>
+    <div class="container">
+    <div class=" page-header"><h3 data-bind="text:displayName"></h3></div>
+    <p data-bind="text:description"></p>
+    <h3>Características da plataforma de desenvolvimento:</h3>
+    <ul data-bind="foreach: features">
+        <li data-bind="text:$data"></li>
+    </ul>
+    </div>
+</section>

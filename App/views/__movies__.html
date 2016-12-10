@@ -1,0 +1,22 @@
+<section>
+    <div class="page-header">
+        <h2>MovieService - <small data-bind="visible: (moviesCount() > 0)"><i class="fa fa-film"></i> movies List [<span data-bind="text: moviesCount"></span> ]</small></h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Movie Name:</span>
+                    <input type="text" id="movieTitle" class="form-control" data-bind="value : searchText" aria-describedby="basic-addon1" placeholder="Movie title" />
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-default" id="searchBtn" data-bind="click: searchMovies, disable : searchTextGood"><i class="fa fa-search"></i></button>
+                <button class="btn btn-default" id="clearSearchBtn" data-bind="click : clearMovies"><i class="fa fa-trash-o"></i></button>
+            </div>
+        </div>
+        <hr />
+        
+        <span class="alert alert-danger col-md-12" data-bind="visible: error, html: error"></span>
+    </div>
+</section>
